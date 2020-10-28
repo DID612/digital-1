@@ -7,6 +7,7 @@ public class 로또예제 {
 		int [] user = new int[6];
 		int min = 1, max = 45;
 		randomArray(lotto,min, max);
+		
 		printArray(lotto);
 		randomArray(user,min,max);
 		printArray(user);
