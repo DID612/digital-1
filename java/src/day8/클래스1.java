@@ -43,6 +43,8 @@ public class 클래스1 {
 		 * - private으로 된 멤버 메소드와 변수는 다른 클래스에서 사용할 수 없다
 		 * 
 		 * - 일반적으로 멤버 변수는 private로하고, 멤버 메소드는 public으로 한다
+		 * - 일반적으로 private으로 된 멤버 변수들은 getter와 setter를 만들어서
+		 *   해당 멤버 변수의 값을 변경가능하도록 한다.
 		 * - private으로 된 멤버 변수는 public으로 된 멤버 메소드를 통해 접근한다.
 		 * */
 		Point point = new Point();
@@ -55,8 +57,8 @@ public class 클래스1 {
 		point.print();
 		point.x = 10;
 		point.y = 20;
-		//point.x1 = 10;
-		//point.y1 = 20;
+		point.setX1(10);//point.x1 = 10;
+		point.setY1(20);//point.y1 = 20;
 		point.print();
 	}
 }
@@ -95,18 +97,31 @@ class Point{
 		x1 = x2;
 		y1 = y2;
 	}
+//	public int getX1() {
+//		return x1;
+//	}
+//	public int getY1() {
+//		return y1;
+//	}
+//	public void setX1(int x) {
+//		x1 = x;
+//	}
+//	public void setY1(int y) {
+//		y1 = y;
+//	}
 	public int getX1() {
 		return x1;
+	}
+	public void setX1(int x1) {
+		this.x1 = x1;
 	}
 	public int getY1() {
 		return y1;
 	}
-	public void setX1(int x) {
-		x1 = x;
+	public void setY1(int y1) {
+		this.y1 = y1;
 	}
-	public void setY1(int y) {
-		y1 = y;
-	}
+	
 }
 
 
