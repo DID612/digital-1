@@ -25,8 +25,8 @@ public class Object클래스 {
 		Student std3 = (Student) std1.clone();
 		std3.age = 30;
 		std3.name = "이순신";
-		System.out.println(std1);
-		System.out.println(std3);
+		System.out.println("원본 : "+std1);
+		System.out.println("복사본: "+std3);
 		Class cObj = std3.getClass();
 		System.out.println(cObj.getName());
 		System.out.println(cObj.toGenericString());
