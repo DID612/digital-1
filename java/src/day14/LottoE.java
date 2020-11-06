@@ -25,7 +25,10 @@ public class LottoE extends Lotto2 {
 		return super.toString()+", [" + bonus + "]";
 	}
 	public void insertNumber(int []arr,int bonus) {
-		
+		if(arr.length < numbers.length)
+			throw new RuntimeException("저장하려는 배열의 숫자가 적습니다.");
+		super.insertNumber(arr);
+		this.bonus = bonus;
 	}
 	@Override
 	public void insertNumber(int []arr) {
@@ -33,5 +36,8 @@ public class LottoE extends Lotto2 {
 			throw new RuntimeException("저장하려는 배열의 숫자가 적습니다.");
 		super.insertNumber(arr);
 		bonus = arr[numbers.length];
+	}
+	public int getBonus() {
+		return bonus;
 	}
 }
