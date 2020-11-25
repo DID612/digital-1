@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>박스 배치 예제</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.header{
+			min-width: 1190px;
+			height: 161px;
+		}
+		.menu{
+			min-width: 1190px;
+			height: 50px;
+			border-top: 1px solid rgb(224,227,230);
+			border-bottom: 1px solid rgb(224,227,230);
+		}
+		.contents{
+			min-width: 1190px;
+			height: 500px;
+		}
+		.container{
+			height: 100%;
+			width: 1190px;
+			margin: 0 auto;
+		}
+		.contents>.container{
+			padding: 20px 30px;
+			box-sizing: border-box;
+		}
+		.left{
+			width: 750px;
+			height: 100%;
+			border: 1px solid brown;
+			float: left;
+		}
+		.right{
+			width: 350px;
+			height: 100%;
+			border: 1px solid violet;
+			float: right;
+		}
+		.add img{
+			height: 135px;
+			display: block;
+			width: 750px;
+		}
+		.box{
+			margin-bottom: 12px;
+		}
+		.login-box{
+			height: 135px;
+			width: 100%;
+			border: 1px solid rgb(218,225,230);
+			background-color: rgb(247,249,250);
+			padding: 16px 16px 12px 17px;
+			box-sizing: border-box;
+		}
+		.login-box>.in-box{
+			width: 100%;
+			height: 100%;
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="container"></div>
+	</div>
+	<div class="menu">
+		<div class="container"></div>
+	</div>
+	<div class="contents">
+		<div class="container">
+			<div class="left">
+				<div class="add box">
+					<a target="_blank" href="https://nintendo.co.kr/software/switch/axeab/?src=image&kw=00007D">
+						<img src="https://ssl.pstatic.net/tveta/libs/1303/1303395/e125457cb278168acdf9_20201124162155433.jpg" alt="광고">
+					</a>
+				</div>
+			</div>
+			<div class="right">
+				<div class="login-box box">
+					<div class="in-box"></div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>
