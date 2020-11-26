@@ -99,14 +99,21 @@
 		}
 		.find-id,
 		.find-pw,
-		.signup,
-		.fa-lock{
+		.signup{
 			color: #404040;
 			line-height: 16px;
 			font-size: 12px;
+			display: inline-block;
 		}
 		.login-box .sub-box{
-			margin: 14px 8px 0 4px;	
+			margin: 10px 8px 0 4px;	
+		}
+		.login-box .point{
+			display: inline-block;
+			height: 4px;
+			width: 4px;
+			background-color: #404040;
+			border-radius: 2px;
 		}
 	</style>
 	<script src="https://kit.fontawesome.com/b1e3c8f87d.js" 
@@ -137,12 +144,12 @@
 						</a>
 						<div class="sub-box">
 							<div class="sub-left">
-								<i class="fas fa-lock"></i>
-								<a href="#" class="find-id">아이디</a>
-								<a href="#" class="find-pw">비밀번호찾기</a>
+								<a href="https://nid.naver.com/user2/help/idInquiry.nhn?menu=idinquiry" class="find-id"><i class="fas fa-lock"></i> 아이디</a>
+								<span class="point"></span>
+								<a href="https://nid.naver.com/user2/help/pwInquiry.nhn?menu=pwinquiry" class="find-pw">비밀번호찾기</a>
 							</div>
 							<div class="sub-right">
-								<a href="#" class="signup">회원가입</a>
+								<a href="https://nid.naver.com/user2/V2Join.nhn?m=agree&lang=ko_KR&cpno=" class="signup"><i class="fas fa-user"></i> 회원가입</a>
 							</div>
 						</div>
 					</div>
